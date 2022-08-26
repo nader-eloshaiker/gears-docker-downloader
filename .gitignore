@@ -1,0 +1,5 @@
+vol/sonarr/MediaCover
+vol/radarr/MediaCover
+vol/transmission/resume
+vol/transmission/torrent
+**/logs**

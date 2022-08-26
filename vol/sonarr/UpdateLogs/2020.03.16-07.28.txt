@@ -1,0 +1,493 @@
+20-3-16 07:28:51.7|Info|UpdateApp|Starting Sonarr Update Client
+20-3-16 07:28:51.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+20-3-16 07:28:51.8|Debug|UpdateApp|NzbDrone process ID: 242
+20-3-16 07:28:51.8|Debug|UpdateApp|Arguments:
+20-3-16 07:28:51.8|Debug|UpdateApp|  242
+20-3-16 07:28:51.8|Debug|UpdateApp|  /tmp/nzbdrone_update
+20-3-16 07:28:51.8|Debug|UpdateApp|  /opt/NzbDrone/NzbDrone.exe
+20-3-16 07:28:51.8|Debug|UpdateApp|  /data=/config
+20-3-16 07:28:51.8|Debug|UpdateApp|  /nobrowser
+20-3-16 07:28:51.8|Debug|UpdateApp|Using executing application: /opt/NzbDrone/NzbDrone.exe
+20-3-16 07:28:51.8|Debug|UpdateApp|Executable location: /opt/NzbDrone/NzbDrone.exe
+20-3-16 07:28:51.8|Info|InstallUpdateService|Installation Folder: /opt/NzbDrone
+20-3-16 07:28:51.8|Info|InstallUpdateService|Updating Sonarr from version 2.0.0.5338 to version 2.0.0.5344
+20-3-16 07:28:51.8|Info|InstallUpdateService|Verifying requirements before update...
+20-3-16 07:28:51.8|Debug|ProcessProvider|Finding process with Id:242
+20-3-16 07:28:52.2|Debug|ProcessProvider|Found process 242:mono-sgen [/usr/bin/mono-sgen]
+20-3-16 07:28:52.2|Info|InstallUpdateService|Verifying Update Folder
+20-3-16 07:28:52.5|Debug|ProcessProvider|Found 0 processes with the name: NzbDrone.Console
+20-3-16 07:28:52.8|Debug|ProcessProvider|Found 1 processes with the name: NzbDrone
+20-3-16 07:28:52.8|Debug|ProcessProvider| - [242] mono-sgen
+20-3-16 07:28:53.1|Info|BackupAndRestore|Creating backup of existing installation
+20-3-16 07:28:53.1|Debug|DiskTransferService|Mirror [/opt/NzbDrone] > [/tmp/nzbdrone_update/nzbdrone_backup/]
+20-3-16 07:28:53.1|Debug|DiskTransferService|Mirror [/opt/NzbDrone/NzbDrone.Update] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update]
+20-3-16 07:28:53.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/CurlSharp.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/CurlSharp.dll]
+20-3-16 07:28:53.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/CurlSharp.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/CurlSharp.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/CurlSharp.dll.mdb]
+20-3-16 07:28:53.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/CurlSharp.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/ICSharpCode.SharpZipLib.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/ICSharpCode.SharpZipLib.dll]
+20-3-16 07:28:53.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/ICSharpCode.SharpZipLib.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/LogentriesCore.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/LogentriesCore.dll]
+20-3-16 07:28:53.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/LogentriesCore.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/LogentriesCore.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/LogentriesCore.dll.mdb]
+20-3-16 07:28:53.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/LogentriesCore.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/LogentriesNLog.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/LogentriesNLog.dll]
+20-3-16 07:28:53.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/LogentriesNLog.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/LogentriesNLog.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/LogentriesNLog.dll.mdb]
+20-3-16 07:28:53.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/LogentriesNLog.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/NLog.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NLog.dll]
+20-3-16 07:28:53.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NLog.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/Newtonsoft.Json.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/Newtonsoft.Json.dll]
+20-3-16 07:28:53.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/Newtonsoft.Json.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/NzbDrone.Common.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Common.dll]
+20-3-16 07:28:53.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Common.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/NzbDrone.Common.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Common.dll.mdb]
+20-3-16 07:28:53.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Common.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/NzbDrone.Mono.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Mono.dll]
+20-3-16 07:28:53.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Mono.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/NzbDrone.Mono.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Mono.dll.mdb]
+20-3-16 07:28:53.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Mono.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/NzbDrone.Update.exe] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Update.exe]
+20-3-16 07:28:53.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Update.exe for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/NzbDrone.Update.exe.config] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Update.exe.config]
+20-3-16 07:28:53.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Update.exe.config for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/NzbDrone.Update.exe.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Update.exe.mdb]
+20-3-16 07:28:53.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/NzbDrone.Update.exe.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/Org.Mentalis.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/Org.Mentalis.dll]
+20-3-16 07:28:53.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/Org.Mentalis.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/SharpRaven.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/SharpRaven.dll]
+20-3-16 07:28:53.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/SharpRaven.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/SharpRaven.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/SharpRaven.dll.mdb]
+20-3-16 07:28:53.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/SharpRaven.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Update/SocksWebProxy.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/SocksWebProxy.dll]
+20-3-16 07:28:53.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Update/SocksWebProxy.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.3|Debug|DiskTransferService|Mirror [/opt/NzbDrone/UI] > [/tmp/nzbdrone_update/nzbdrone_backup/UI]
+20-3-16 07:28:53.3|Debug|DiskTransferService|Mirror [/opt/NzbDrone/UI/Content] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content]
+20-3-16 07:28:53.3|Debug|DiskTransferService|Mirror [/opt/NzbDrone/UI/Content/FontAwesome] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome]
+20-3-16 07:28:53.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/FontAwesome/FontAwesome.otf] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome/FontAwesome.otf]
+20-3-16 07:28:53.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome/FontAwesome.otf for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/FontAwesome/fontawesome-webfont.eot] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome/fontawesome-webfont.eot]
+20-3-16 07:28:53.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome/fontawesome-webfont.eot for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/FontAwesome/fontawesome-webfont.svg] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome/fontawesome-webfont.svg]
+20-3-16 07:28:53.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome/fontawesome-webfont.svg for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/FontAwesome/fontawesome-webfont.ttf] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome/fontawesome-webfont.ttf]
+20-3-16 07:28:53.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome/fontawesome-webfont.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/FontAwesome/fontawesome-webfont.woff] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome/fontawesome-webfont.woff]
+20-3-16 07:28:53.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome/fontawesome-webfont.woff for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/FontAwesome/fontawesome-webfont.woff2] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome/fontawesome-webfont.woff2]
+20-3-16 07:28:53.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/FontAwesome/fontawesome-webfont.woff2 for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.4|Debug|DiskTransferService|Mirror [/opt/NzbDrone/UI/Content/Images] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images]
+20-3-16 07:28:53.4|Debug|DiskTransferService|Mirror [/opt/NzbDrone/UI/Content/Images/background] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/background]
+20-3-16 07:28:53.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/background/logo.png] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/background/logo.png]
+20-3-16 07:28:53.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/background/logo.png for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.4|Debug|DiskTransferService|Mirror [/opt/NzbDrone/UI/Content/Images/logos] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/logos]
+20-3-16 07:28:53.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/logos/128.png] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/logos/128.png]
+20-3-16 07:28:53.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/logos/128.png for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/logos/32.png] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/logos/32.png]
+20-3-16 07:28:53.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/logos/32.png for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/logos/48.png] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/logos/48.png]
+20-3-16 07:28:53.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/logos/48.png for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/logos/64.png] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/logos/64.png]
+20-3-16 07:28:53.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/logos/64.png for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.4|Debug|DiskTransferService|Mirror [/opt/NzbDrone/UI/Content/Images/safari] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/safari]
+20-3-16 07:28:53.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/safari/logo.svg] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/safari/logo.svg]
+20-3-16 07:28:53.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/safari/logo.svg for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.5|Debug|DiskTransferService|Mirror [/opt/NzbDrone/UI/Content/Images/touch] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/touch]
+20-3-16 07:28:53.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/touch/114.png] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/touch/114.png]
+20-3-16 07:28:53.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/touch/114.png for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/touch/144.png] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/touch/144.png]
+20-3-16 07:28:53.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/touch/144.png for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/touch/57.png] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/touch/57.png]
+20-3-16 07:28:53.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/touch/57.png for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/touch/72.png] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/touch/72.png]
+20-3-16 07:28:53.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/touch/72.png for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/404.png] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/404.png]
+20-3-16 07:28:53.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/404.png for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/favicon-debug.ico] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/favicon-debug.ico]
+20-3-16 07:28:53.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/favicon-debug.ico for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/favicon.ico] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/favicon.ico]
+20-3-16 07:28:53.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/favicon.ico for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/Images/poster-dark.png] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/poster-dark.png]
+20-3-16 07:28:53.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/Images/poster-dark.png for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.5|Debug|DiskTransferService|Mirror [/opt/NzbDrone/UI/Content/_output] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output]
+20-3-16 07:28:53.5|Debug|DiskTransferService|Mirror [/opt/NzbDrone/UI/Content/_output/UI] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI]
+20-3-16 07:28:53.5|Debug|DiskTransferService|Mirror [/opt/NzbDrone/UI/Content/_output/UI/Content] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content]
+20-3-16 07:28:53.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/activity.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/activity.css.map]
+20-3-16 07:28:53.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/activity.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/addSeries.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/addSeries.css.map]
+20-3-16 07:28:53.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/addSeries.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/bootstrap.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/bootstrap.css.map]
+20-3-16 07:28:53.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/bootstrap.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/bootstrap.toggle-switch.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/bootstrap.toggle-switch.css.map]
+20-3-16 07:28:53.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/bootstrap.toggle-switch.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/calendar.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/calendar.css.map]
+20-3-16 07:28:53.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/calendar.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/cells.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/cells.css.map]
+20-3-16 07:28:53.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/cells.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/fullcalendar.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/fullcalendar.css.map]
+20-3-16 07:28:53.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/fullcalendar.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/info.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/info.css.map]
+20-3-16 07:28:53.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/info.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/logs.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/logs.css.map]
+20-3-16 07:28:53.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/logs.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/manualimport.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/manualimport.css.map]
+20-3-16 07:28:53.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/manualimport.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/messenger.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/messenger.css.map]
+20-3-16 07:28:53.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/messenger.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/messenger.flat.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/messenger.flat.css.map]
+20-3-16 07:28:53.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/messenger.flat.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/overrides.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/overrides.css.map]
+20-3-16 07:28:53.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/overrides.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/series.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/series.css.map]
+20-3-16 07:28:53.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/series.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/settings.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/settings.css.map]
+20-3-16 07:28:53.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/settings.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/theme.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/theme.css.map]
+20-3-16 07:28:53.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/theme.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/_output/UI/Content/update.css.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/update.css.map]
+20-3-16 07:28:53.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/_output/UI/Content/update.css.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.7|Debug|DiskTransferService|Mirror [/opt/NzbDrone/UI/Content/fonts] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts]
+20-3-16 07:28:53.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fonts/UbuntuMono-Regular.ttf] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/UbuntuMono-Regular.ttf]
+20-3-16 07:28:53.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/UbuntuMono-Regular.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fonts/opensans-light.eot] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-light.eot]
+20-3-16 07:28:53.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-light.eot for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fonts/opensans-light.ttf] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-light.ttf]
+20-3-16 07:28:53.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-light.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fonts/opensans-light.woff] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-light.woff]
+20-3-16 07:28:53.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-light.woff for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fonts/opensans-regular.eot] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-regular.eot]
+20-3-16 07:28:53.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-regular.eot for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fonts/opensans-regular.ttf] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-regular.ttf]
+20-3-16 07:28:53.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-regular.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fonts/opensans-regular.woff] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-regular.woff]
+20-3-16 07:28:53.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-regular.woff for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fonts/opensans-semibold.eot] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-semibold.eot]
+20-3-16 07:28:53.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-semibold.eot for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fonts/opensans-semibold.ttf] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-semibold.ttf]
+20-3-16 07:28:53.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-semibold.ttf for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fonts/opensans-semibold.woff] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-semibold.woff]
+20-3-16 07:28:53.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/opensans-semibold.woff for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.9|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fonts/ubuntumono-regular.eot] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/ubuntumono-regular.eot]
+20-3-16 07:28:53.9|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/ubuntumono-regular.eot for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.9|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fonts/ubuntumono-regular.woff] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/ubuntumono-regular.woff]
+20-3-16 07:28:53.9|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fonts/ubuntumono-regular.woff for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.9|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/activity.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/activity.css]
+20-3-16 07:28:53.9|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/activity.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.9|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/addSeries.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/addSeries.css]
+20-3-16 07:28:53.9|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/addSeries.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.9|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/bootstrap.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/bootstrap.css]
+20-3-16 07:28:53.9|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/bootstrap.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.9|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/bootstrap.toggle-switch.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/bootstrap.toggle-switch.css]
+20-3-16 07:28:53.9|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/bootstrap.toggle-switch.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.9|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/calendar.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/calendar.css]
+20-3-16 07:28:53.9|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/calendar.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.9|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/cells.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/cells.css]
+20-3-16 07:28:53.9|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/cells.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.9|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/fullcalendar.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fullcalendar.css]
+20-3-16 07:28:53.9|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/fullcalendar.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:53.9|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/info.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/info.css]
+20-3-16 07:28:53.9|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/info.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.0|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/logs.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/logs.css]
+20-3-16 07:28:54.0|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/logs.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.0|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/manualimport.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/manualimport.css]
+20-3-16 07:28:54.0|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/manualimport.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.0|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/messenger.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/messenger.css]
+20-3-16 07:28:54.0|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/messenger.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.0|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/messenger.flat.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/messenger.flat.css]
+20-3-16 07:28:54.0|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/messenger.flat.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.0|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/overrides.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/overrides.css]
+20-3-16 07:28:54.0|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/overrides.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.0|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/robots.txt] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/robots.txt]
+20-3-16 07:28:54.0|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/robots.txt for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.0|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/series.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/series.css]
+20-3-16 07:28:54.0|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/series.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.0|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/settings.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/settings.css]
+20-3-16 07:28:54.0|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/settings.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.0|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/theme.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/theme.css]
+20-3-16 07:28:54.0|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/theme.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/update.css] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/update.css]
+20-3-16 07:28:54.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/update.css for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/Content/zero.clipboard.swf] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/Content/zero.clipboard.swf]
+20-3-16 07:28:54.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/Content/zero.clipboard.swf for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/handlebars.runtime.js] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/handlebars.runtime.js]
+20-3-16 07:28:54.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/handlebars.runtime.js for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/index.html] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/index.html]
+20-3-16 07:28:54.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/index.html for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/login.html] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/login.html]
+20-3-16 07:28:54.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/login.html for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/main.js] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/main.js]
+20-3-16 07:28:54.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/main.js for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/main.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/main.map]
+20-3-16 07:28:54.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/main.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/oauth.html] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/oauth.html]
+20-3-16 07:28:54.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/oauth.html for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/polyfills.js] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/polyfills.js]
+20-3-16 07:28:54.1|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/polyfills.js for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.1|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/templates.js] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/templates.js]
+20-3-16 07:28:54.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/templates.js for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/vendor.js] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/vendor.js]
+20-3-16 07:28:54.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/vendor.js for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/UI/vendor.map] > [/tmp/nzbdrone_update/nzbdrone_backup/UI/vendor.map]
+20-3-16 07:28:54.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/UI/vendor.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/CookComputing.XmlRpcV2.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/CookComputing.XmlRpcV2.dll]
+20-3-16 07:28:54.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/CookComputing.XmlRpcV2.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/CurlSharp.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/CurlSharp.dll]
+20-3-16 07:28:54.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/CurlSharp.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/CurlSharp.dll.config] > [/tmp/nzbdrone_update/nzbdrone_backup/CurlSharp.dll.config]
+20-3-16 07:28:54.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/CurlSharp.dll.config for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/CurlSharp.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/CurlSharp.dll.mdb]
+20-3-16 07:28:54.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/CurlSharp.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/FluentMigrator.Runner.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/FluentMigrator.Runner.dll]
+20-3-16 07:28:54.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/FluentMigrator.Runner.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/FluentMigrator.Runner.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/FluentMigrator.Runner.dll.mdb]
+20-3-16 07:28:54.2|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/FluentMigrator.Runner.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.2|Debug|DiskTransferService|Copy [/opt/NzbDrone/FluentMigrator.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/FluentMigrator.dll]
+20-3-16 07:28:54.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/FluentMigrator.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/FluentMigrator.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/FluentMigrator.dll.mdb]
+20-3-16 07:28:54.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/FluentMigrator.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/FluentValidation.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/FluentValidation.dll]
+20-3-16 07:28:54.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/FluentValidation.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/FluentValidation.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/FluentValidation.dll.mdb]
+20-3-16 07:28:54.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/FluentValidation.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/Growl.Connector.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Growl.Connector.dll]
+20-3-16 07:28:54.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Growl.Connector.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/Growl.CoreLibrary.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Growl.CoreLibrary.dll]
+20-3-16 07:28:54.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Growl.CoreLibrary.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/ICSharpCode.SharpZipLib.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/ICSharpCode.SharpZipLib.dll]
+20-3-16 07:28:54.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/ICSharpCode.SharpZipLib.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/Ical.Net.Collections.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Ical.Net.Collections.dll]
+20-3-16 07:28:54.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Ical.Net.Collections.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/Ical.Net.Collections.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/Ical.Net.Collections.dll.mdb]
+20-3-16 07:28:54.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Ical.Net.Collections.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/Ical.Net.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Ical.Net.dll]
+20-3-16 07:28:54.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Ical.Net.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.3|Debug|DiskTransferService|Copy [/opt/NzbDrone/Ical.Net.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/Ical.Net.dll.mdb]
+20-3-16 07:28:54.3|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Ical.Net.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/ImageResizer.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/ImageResizer.dll]
+20-3-16 07:28:54.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/ImageResizer.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/LogentriesCore.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/LogentriesCore.dll]
+20-3-16 07:28:54.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/LogentriesCore.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/LogentriesCore.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/LogentriesCore.dll.mdb]
+20-3-16 07:28:54.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/LogentriesCore.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/LogentriesNLog.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/LogentriesNLog.dll]
+20-3-16 07:28:54.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/LogentriesNLog.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/LogentriesNLog.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/LogentriesNLog.dll.mdb]
+20-3-16 07:28:54.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/LogentriesNLog.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/Marr.Data.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Marr.Data.dll]
+20-3-16 07:28:54.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Marr.Data.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/Marr.Data.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/Marr.Data.dll.mdb]
+20-3-16 07:28:54.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Marr.Data.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/Microsoft.AspNet.SignalR.Core.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Microsoft.AspNet.SignalR.Core.dll]
+20-3-16 07:28:54.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Microsoft.AspNet.SignalR.Core.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/Microsoft.AspNet.SignalR.Core.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/Microsoft.AspNet.SignalR.Core.dll.mdb]
+20-3-16 07:28:54.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Microsoft.AspNet.SignalR.Core.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/Microsoft.AspNet.SignalR.Owin.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Microsoft.AspNet.SignalR.Owin.dll]
+20-3-16 07:28:54.4|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Microsoft.AspNet.SignalR.Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.4|Debug|DiskTransferService|Copy [/opt/NzbDrone/Microsoft.AspNet.SignalR.Owin.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/Microsoft.AspNet.SignalR.Owin.dll.mdb]
+20-3-16 07:28:54.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Microsoft.AspNet.SignalR.Owin.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/Microsoft.Owin.Host.HttpListener.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Microsoft.Owin.Host.HttpListener.dll]
+20-3-16 07:28:54.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Microsoft.Owin.Host.HttpListener.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/Microsoft.Owin.Hosting.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Microsoft.Owin.Hosting.dll]
+20-3-16 07:28:54.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Microsoft.Owin.Hosting.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/Microsoft.Owin.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Microsoft.Owin.dll]
+20-3-16 07:28:54.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Microsoft.Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/MonoTorrent.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/MonoTorrent.dll]
+20-3-16 07:28:54.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/MonoTorrent.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/MonoTorrent.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/MonoTorrent.dll.mdb]
+20-3-16 07:28:54.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/MonoTorrent.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/NLog.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NLog.dll]
+20-3-16 07:28:54.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NLog.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/Nancy.Authentication.Basic.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Nancy.Authentication.Basic.dll]
+20-3-16 07:28:54.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Nancy.Authentication.Basic.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/Nancy.Authentication.Forms.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Nancy.Authentication.Forms.dll]
+20-3-16 07:28:54.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Nancy.Authentication.Forms.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/Nancy.Owin.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Nancy.Owin.dll]
+20-3-16 07:28:54.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Nancy.Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.5|Debug|DiskTransferService|Copy [/opt/NzbDrone/Nancy.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Nancy.dll]
+20-3-16 07:28:54.5|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Nancy.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/Newtonsoft.Json.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Newtonsoft.Json.dll]
+20-3-16 07:28:54.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Newtonsoft.Json.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/NodaTime.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NodaTime.dll]
+20-3-16 07:28:54.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NodaTime.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Api.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Api.dll]
+20-3-16 07:28:54.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Api.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Api.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Api.dll.mdb]
+20-3-16 07:28:54.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Api.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Common.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Common.dll]
+20-3-16 07:28:54.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Common.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Common.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Common.dll.mdb]
+20-3-16 07:28:54.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Common.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Core.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Core.dll]
+20-3-16 07:28:54.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Core.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Core.dll.config] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Core.dll.config]
+20-3-16 07:28:54.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Core.dll.config for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Core.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Core.dll.mdb]
+20-3-16 07:28:54.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Core.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.6|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Host.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Host.dll]
+20-3-16 07:28:54.6|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Host.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Host.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Host.dll.mdb]
+20-3-16 07:28:54.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Host.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Mono.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Mono.dll]
+20-3-16 07:28:54.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Mono.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.Mono.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Mono.dll.mdb]
+20-3-16 07:28:54.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.Mono.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.SignalR.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.SignalR.dll]
+20-3-16 07:28:54.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.SignalR.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.SignalR.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.SignalR.dll.mdb]
+20-3-16 07:28:54.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.SignalR.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.exe] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.exe]
+20-3-16 07:28:54.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.exe for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.exe.config] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.exe.config]
+20-3-16 07:28:54.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.exe.config for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/NzbDrone.exe.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.exe.mdb]
+20-3-16 07:28:54.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/NzbDrone.exe.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/OAuth.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/OAuth.dll]
+20-3-16 07:28:54.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/OAuth.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/OAuth.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/OAuth.dll.mdb]
+20-3-16 07:28:54.7|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/OAuth.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.7|Debug|DiskTransferService|Copy [/opt/NzbDrone/Org.Mentalis.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Org.Mentalis.dll]
+20-3-16 07:28:54.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Org.Mentalis.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/Owin.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Owin.dll]
+20-3-16 07:28:54.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/Prowlin.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/Prowlin.dll]
+20-3-16 07:28:54.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/Prowlin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/RestSharp.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/RestSharp.dll]
+20-3-16 07:28:54.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/RestSharp.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/SharpRaven.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/SharpRaven.dll]
+20-3-16 07:28:54.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/SharpRaven.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/SharpRaven.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/SharpRaven.dll.mdb]
+20-3-16 07:28:54.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/SharpRaven.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/SocksWebProxy.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/SocksWebProxy.dll]
+20-3-16 07:28:54.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/SocksWebProxy.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/System.Data.SQLite.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/System.Data.SQLite.dll]
+20-3-16 07:28:54.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/System.Data.SQLite.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/System.Data.SQLite.xml] > [/tmp/nzbdrone_update/nzbdrone_backup/System.Data.SQLite.xml]
+20-3-16 07:28:54.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/System.Data.SQLite.xml for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/antlr.runtime.dll] > [/tmp/nzbdrone_update/nzbdrone_backup/antlr.runtime.dll]
+20-3-16 07:28:54.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/antlr.runtime.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.8|Debug|DiskTransferService|Copy [/opt/NzbDrone/antlr.runtime.dll.mdb] > [/tmp/nzbdrone_update/nzbdrone_backup/antlr.runtime.dll.mdb]
+20-3-16 07:28:54.8|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_backup/antlr.runtime.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.9|Info|BackupAppData|Backing up appdata (database/config)
+20-3-16 07:28:54.9|Debug|DiskTransferService|Copy [/config/config.xml] > [/tmp/nzbdrone_update/nzbdrone_appdata_backup/config.xml]
+20-3-16 07:28:54.9|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_appdata_backup/config.xml for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.9|Debug|DiskTransferService|Copy [/config/nzbdrone.db] > [/tmp/nzbdrone_update/nzbdrone_appdata_backup/nzbdrone.db]
+20-3-16 07:28:54.9|Trace|SymbolicLinkResolver|Checking path /tmp/nzbdrone_update/nzbdrone_appdata_backup/nzbdrone.db for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:54.9|Info|InstallUpdateService|Copying new files to target folder
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/] > [/opt/NzbDrone]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/UI] > [/opt/NzbDrone/UI]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/UI/Content] > [/opt/NzbDrone/UI/Content]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/UI/Content/FontAwesome] > [/opt/NzbDrone/UI/Content/FontAwesome]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/UI/Content/Images] > [/opt/NzbDrone/UI/Content/Images]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/UI/Content/Images/background] > [/opt/NzbDrone/UI/Content/Images/background]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/UI/Content/Images/logos] > [/opt/NzbDrone/UI/Content/Images/logos]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/UI/Content/Images/safari] > [/opt/NzbDrone/UI/Content/Images/safari]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/UI/Content/Images/touch] > [/opt/NzbDrone/UI/Content/Images/touch]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/UI/Content/_output] > [/opt/NzbDrone/UI/Content/_output]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/UI/Content/_output/UI] > [/opt/NzbDrone/UI/Content/_output/UI]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/UI/Content/_output/UI/Content] > [/opt/NzbDrone/UI/Content/_output/UI/Content]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Mirror [/tmp/nzbdrone_update/NzbDrone/UI/Content/fonts] > [/opt/NzbDrone/UI/Content/fonts]
+20-3-16 07:28:54.9|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/UI/templates.js] > [/opt/NzbDrone/UI/templates.js]
+20-3-16 07:28:54.9|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/UI/templates.js
+20-3-16 07:28:54.9|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/UI/templates.js for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.0|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/UI/vendor.map] > [/opt/NzbDrone/UI/vendor.map]
+20-3-16 07:28:55.0|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/UI/vendor.map
+20-3-16 07:28:55.0|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/UI/vendor.map for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.0|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/CurlSharp.dll] > [/opt/NzbDrone/CurlSharp.dll]
+20-3-16 07:28:55.0|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/CurlSharp.dll
+20-3-16 07:28:55.0|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/CurlSharp.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.0|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/CurlSharp.dll.mdb] > [/opt/NzbDrone/CurlSharp.dll.mdb]
+20-3-16 07:28:55.0|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/CurlSharp.dll.mdb
+20-3-16 07:28:55.0|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/CurlSharp.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.0|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/LogentriesCore.dll] > [/opt/NzbDrone/LogentriesCore.dll]
+20-3-16 07:28:55.0|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/LogentriesCore.dll
+20-3-16 07:28:55.0|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/LogentriesCore.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.0|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/LogentriesCore.dll.mdb] > [/opt/NzbDrone/LogentriesCore.dll.mdb]
+20-3-16 07:28:55.0|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/LogentriesCore.dll.mdb
+20-3-16 07:28:55.0|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/LogentriesCore.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.0|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/LogentriesNLog.dll] > [/opt/NzbDrone/LogentriesNLog.dll]
+20-3-16 07:28:55.0|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/LogentriesNLog.dll
+20-3-16 07:28:55.0|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/LogentriesNLog.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.0|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/LogentriesNLog.dll.mdb] > [/opt/NzbDrone/LogentriesNLog.dll.mdb]
+20-3-16 07:28:55.0|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/LogentriesNLog.dll.mdb
+20-3-16 07:28:55.0|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/LogentriesNLog.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.0|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/Marr.Data.dll] > [/opt/NzbDrone/Marr.Data.dll]
+20-3-16 07:28:55.0|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/Marr.Data.dll
+20-3-16 07:28:55.0|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/Marr.Data.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.0|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/Marr.Data.dll.mdb] > [/opt/NzbDrone/Marr.Data.dll.mdb]
+20-3-16 07:28:55.0|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/Marr.Data.dll.mdb
+20-3-16 07:28:55.1|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/Marr.Data.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.1|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/Microsoft.AspNet.SignalR.Core.dll] > [/opt/NzbDrone/Microsoft.AspNet.SignalR.Core.dll]
+20-3-16 07:28:55.1|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/Microsoft.AspNet.SignalR.Core.dll
+20-3-16 07:28:55.1|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/Microsoft.AspNet.SignalR.Core.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.1|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/Microsoft.AspNet.SignalR.Core.dll.mdb] > [/opt/NzbDrone/Microsoft.AspNet.SignalR.Core.dll.mdb]
+20-3-16 07:28:55.1|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/Microsoft.AspNet.SignalR.Core.dll.mdb
+20-3-16 07:28:55.1|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/Microsoft.AspNet.SignalR.Core.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.1|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/Microsoft.AspNet.SignalR.Owin.dll] > [/opt/NzbDrone/Microsoft.AspNet.SignalR.Owin.dll]
+20-3-16 07:28:55.1|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/Microsoft.AspNet.SignalR.Owin.dll
+20-3-16 07:28:55.1|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/Microsoft.AspNet.SignalR.Owin.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.1|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/Microsoft.AspNet.SignalR.Owin.dll.mdb] > [/opt/NzbDrone/Microsoft.AspNet.SignalR.Owin.dll.mdb]
+20-3-16 07:28:55.1|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/Microsoft.AspNet.SignalR.Owin.dll.mdb
+20-3-16 07:28:55.1|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/Microsoft.AspNet.SignalR.Owin.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.1|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/MonoTorrent.dll] > [/opt/NzbDrone/MonoTorrent.dll]
+20-3-16 07:28:55.1|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/MonoTorrent.dll
+20-3-16 07:28:55.1|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/MonoTorrent.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.1|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/MonoTorrent.dll.mdb] > [/opt/NzbDrone/MonoTorrent.dll.mdb]
+20-3-16 07:28:55.1|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/MonoTorrent.dll.mdb
+20-3-16 07:28:55.1|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/MonoTorrent.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.1|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.Api.dll] > [/opt/NzbDrone/NzbDrone.Api.dll]
+20-3-16 07:28:55.1|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.Api.dll
+20-3-16 07:28:55.1|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.Api.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.1|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.Api.dll.mdb] > [/opt/NzbDrone/NzbDrone.Api.dll.mdb]
+20-3-16 07:28:55.1|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.Api.dll.mdb
+20-3-16 07:28:55.1|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.Api.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.1|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.Common.dll] > [/opt/NzbDrone/NzbDrone.Common.dll]
+20-3-16 07:28:55.1|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.Common.dll
+20-3-16 07:28:55.2|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.Common.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.2|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.Common.dll.mdb] > [/opt/NzbDrone/NzbDrone.Common.dll.mdb]
+20-3-16 07:28:55.2|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.Common.dll.mdb
+20-3-16 07:28:55.2|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.Common.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.2|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.Core.dll] > [/opt/NzbDrone/NzbDrone.Core.dll]
+20-3-16 07:28:55.2|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.Core.dll
+20-3-16 07:28:55.2|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.Core.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.2|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.Core.dll.mdb] > [/opt/NzbDrone/NzbDrone.Core.dll.mdb]
+20-3-16 07:28:55.2|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.Core.dll.mdb
+20-3-16 07:28:55.2|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.Core.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.2|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.Host.dll] > [/opt/NzbDrone/NzbDrone.Host.dll]
+20-3-16 07:28:55.2|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.Host.dll
+20-3-16 07:28:55.2|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.Host.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.2|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.Host.dll.mdb] > [/opt/NzbDrone/NzbDrone.Host.dll.mdb]
+20-3-16 07:28:55.2|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.Host.dll.mdb
+20-3-16 07:28:55.2|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.Host.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.2|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.Mono.dll] > [/opt/NzbDrone/NzbDrone.Mono.dll]
+20-3-16 07:28:55.2|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.Mono.dll
+20-3-16 07:28:55.2|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.Mono.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.2|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.Mono.dll.mdb] > [/opt/NzbDrone/NzbDrone.Mono.dll.mdb]
+20-3-16 07:28:55.2|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.Mono.dll.mdb
+20-3-16 07:28:55.2|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.Mono.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.2|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.SignalR.dll] > [/opt/NzbDrone/NzbDrone.SignalR.dll]
+20-3-16 07:28:55.2|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.SignalR.dll
+20-3-16 07:28:55.2|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.SignalR.dll for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.2|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.SignalR.dll.mdb] > [/opt/NzbDrone/NzbDrone.SignalR.dll.mdb]
+20-3-16 07:28:55.2|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.SignalR.dll.mdb
+20-3-16 07:28:55.2|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.SignalR.dll.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.2|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.exe] > [/opt/NzbDrone/NzbDrone.exe]
+20-3-16 07:28:55.2|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.exe
+20-3-16 07:28:55.3|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.exe for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.3|Debug|DiskTransferService|Copy [/tmp/nzbdrone_update/NzbDrone/NzbDrone.exe.mdb] > [/opt/NzbDrone/NzbDrone.exe.mdb]
+20-3-16 07:28:55.3|Trace|DiskProviderBase|Deleting file: /opt/NzbDrone/NzbDrone.exe.mdb
+20-3-16 07:28:55.3|Trace|SymbolicLinkResolver|Checking path /opt/NzbDrone/NzbDrone.exe.mdb for symlink returned error ENOENT, assuming it's not a symlink.
+20-3-16 07:28:55.3|Info|TerminateNzbDrone|Killing all running processes
+20-3-16 07:28:55.6|Debug|ProcessProvider|Found 0 processes with the name: NzbDrone.Console
+20-3-16 07:28:55.6|Debug|ProcessProvider|Found 0 processes to kill
+20-3-16 07:28:55.9|Debug|ProcessProvider|Found 0 processes with the name: NzbDrone
+20-3-16 07:28:55.9|Debug|ProcessProvider|Found 0 processes to kill
+20-3-16 07:28:55.9|Info|ProcessProvider|[242]: Killing process
+20-3-16 07:28:55.9|Info|ProcessProvider|[242]: Waiting for exit
+20-3-16 07:28:55.9|Info|ProcessProvider|[242]: Process terminated successfully
+20-3-16 07:28:55.9|Info|InstallUpdateService|Waiting for external auto-restart.
+20-3-16 07:28:56.9|Debug|ProcessProvider|Found 1 processes with the name: NzbDrone
+20-3-16 07:28:56.9|Debug|ProcessProvider| - [26271] mono-sgen
+20-3-16 07:28:56.9|Info|InstallUpdateService|Sonarr was restarted by external process.
+20-3-16 07:28:56.9|Debug|ProcessProvider|Found 1 processes with the name: NzbDrone
+20-3-16 07:28:56.9|Debug|ProcessProvider| - [26271] mono-sgen
+20-3-16 07:28:56.9|Info|UpdateApp|Update completed successfully
