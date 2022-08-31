@@ -1,5 +1,5 @@
-vol/sonarr/MediaCover
-vol/radarr/MediaCover
-vol/transmission/resume
-vol/transmission/torrent
+**/MediaCover
+**/Backups
+config/transmission/resume
+config/transmission/torrent
 **/logs**

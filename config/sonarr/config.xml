@@ -1,0 +1,15 @@
+<Config>
+  <LogLevel>Info</LogLevel>
+  <Port>8989</Port>
+  <UrlBase></UrlBase>
+  <BindAddress>*</BindAddress>
+  <SslPort>9898</SslPort>
+  <EnableSsl>False</EnableSsl>
+  <ApiKey>9e77aa32aa2a4c2e93089e6bdd3eee47</ApiKey>
+  <AuthenticationMethod>Forms</AuthenticationMethod>
+  <Branch>main</Branch>
+  <LaunchBrowser>True</LaunchBrowser>
+  <SslCertHash></SslCertHash>
+  <UpdateMechanism>Docker</UpdateMechanism>
+  <InstanceName>Sonarr</InstanceName>
+</Config>
