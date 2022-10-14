@@ -47,7 +47,7 @@
     "rpc-enabled": true,
     "rpc-host-whitelist": "",
     "rpc-host-whitelist-enabled": false,
-    "rpc-password": "{e34c46af5ec27ce5313c31841c4bd126d4370360uIzd8Sv5",
+    "rpc-password": "{cbdf93e3cdc05822a5724c789fc6954e2e6510acR5HpbxuT",
     "rpc-port": 9091,
     "rpc-url": "/transmission/",
     "rpc-username": "admin",
@@ -68,5 +68,5 @@
     "upload-slots-per-torrent": 14,
     "utp-enabled": true,
     "watch-dir": "/watch",
-    "watch-dir-enabled": true
+    "watch-dir-enabled": false
 }

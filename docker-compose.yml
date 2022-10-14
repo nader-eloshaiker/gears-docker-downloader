@@ -5,7 +5,6 @@ services:
     image: "linuxserver/transmission:latest"
     restart: always
     container_name: "transmission"
-    # network_mode: "host"
     volumes:
       - "./config/transmission:/config"
       - "/share/Download/.transmission/incomplete:/incomplete"
@@ -52,13 +51,6 @@ services:
       traefik.http.routers.sonarr.service: sonarr
       traefik.http.services.sonarr.loadbalancer.server.port: 8989
       traefik.http.services.sonarr.loadbalancer.server.scheme: http
-      # traefik.http.routers.sonarrAPI.rule: Host(`sonarr.eloshaiker.com`) && PathPrefix(`/api`)
-      # traefik.http.routers.sonarrAPI.entrypoints: websecure
-      # traefik.http.routers.sonarrAPI.tls: true
-      # traefik.http.routers.sonarrAPI.middlewares: HstsHeader@file, RateLimit@file
-      # traefik.http.routers.sonarrAPI.service: sonarrAPI
-      # traefik.http.services.sonarrAPI.loadbalancer.server.port: 8989
-      # traefik.http.services.sonarrAPI.loadbalancer.server.scheme: http
 
   radarr:
     image: "linuxserver/radarr:latest"
@@ -83,13 +75,6 @@ services:
       traefik.http.routers.radarr.service: radarr
       traefik.http.services.radarr.loadbalancer.server.port: 7878
       traefik.http.services.radarr.loadbalancer.server.scheme: http
-      # traefik.http.routers.radarrAPI.rule: Host(`radarr.eloshaiker.com`) && PathPrefix(`/api`)
-      # traefik.http.routers.radarrAPI.entrypoints: websecure
-      # traefik.http.routers.radarrAPI.tls: true
-      # traefik.http.routers.radarrAPI.middlewares: HstsHeader@file, RateLimit@file
-      # traefik.http.routers.radarrAPI.service: radarrAPI
-      # traefik.http.services.radarrAPI.loadbalancer.server.port: 7878
-      # traefik.http.services.radarrAPI.loadbalancer.server.scheme: http
 
 networks:
   proxy-network:
