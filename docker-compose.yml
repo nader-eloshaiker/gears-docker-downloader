@@ -2,14 +2,12 @@ version: '3.7'
 
 services:
   transmission:
-    image: "linuxserver/transmission"
+    image: "linuxserver/transmission:latest"
     restart: always
     container_name: "transmission"
     # network_mode: "host"
     volumes:
       - "./config/transmission:/config"
-      # - "/share/Download/.transmission/torrents:/config/torrents"
-      # - "/share/Download/.transmission/resume:/config/resume"
       - "/share/Download/.transmission/incomplete:/incomplete"
       - "/share/Download:/downloads"
     env_file:
@@ -17,8 +15,8 @@ services:
       - .transmission.env
     ports:
       - 9091:9091
-      - 45555:45555
-      - 45555:45555/udp
+      - 51336:51336
+      - 51336:51336/udp
     networks:
       - torrent
       - proxy-network
@@ -30,16 +28,9 @@ services:
       traefik.http.routers.transmission.service: transmission
       traefik.http.services.transmission.loadbalancer.server.port: 9091
       traefik.http.services.transmission.loadbalancer.server.scheme: http
-      # traefik.http.routers.transmissionAPI.rule: Host(`transmission.eloshaiker.com`) && PathPrefix(`/transmission/rpc`)
-      # traefik.http.routers.transmissionAPI.entrypoints: websecure
-      # traefik.http.routers.transmissionAPI.tls: true
-      # traefik.http.routers.transmissionAPI.middlewares: HstsHeader@file, RateLimit@file
-      # traefik.http.routers.transmissionAPI.service: transmissionAPI
-      # traefik.http.services.transmissionAPI.loadbalancer.server.port: 9091
-      # traefik.http.services.transmissionAPI.loadbalancer.server.scheme: http
 
   sonarr:
-    image: "linuxserver/sonarr"
+    image: "linuxserver/sonarr:latest"
     restart: always
     container_name: "sonarr"
     volumes:
@@ -105,4 +96,3 @@ networks:
     external: true
   torrent:
     external: false
-
