@@ -79,6 +79,32 @@ services:
       traefik.http.services.radarr.loadbalancer.server.port: 7878
       traefik.http.services.radarr.loadbalancer.server.scheme: http
 
+  metube:
+    image: alexta69/metube
+    container_name: metube
+    restart: unless-stopped
+    # ports:
+    #   - "8081:8081"
+    env_file:
+      - .env
+    environment:
+      YTDL_OPTIONS: "{\"cookiefile\": \"/cookies/cookies.txt\"}"
+    volumes:
+      - "/share/Download/metube:/downloads"
+      - "./config/metube:/cookies"
+    logging:
+      driver: json-file
+      options:
+        max-size: 1m
+    labels:
+      traefik.enable: true
+      traefik.http.routers.metube.entrypoints: websecure
+      traefik.http.routers.metube.tls: true
+      traefik.http.routers.metube.middlewares: Authelia@file, HstsHeader@file, RateLimit@file
+      traefik.http.routers.metube.service: metube
+      traefik.http.services.metube.loadbalancer.server.port: 8081
+      traefik.http.services.metube.loadbalancer.server.scheme: http
+
 networks:
   default:
     external:
