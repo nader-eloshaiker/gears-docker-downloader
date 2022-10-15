@@ -16,6 +16,10 @@ services:
       - 9091:9091
       - 51336:51336
       - 51336:51336/udp
+    logging:
+      driver: json-file
+      options:
+        max-size: 1m
     labels:
       traefik.enable: true
       traefik.http.routers.transmission.entrypoints: websecure
@@ -37,6 +41,10 @@ services:
       - "8989:8989"
     env_file:
       - .env
+    logging:
+      driver: json-file
+      options:
+        max-size: 1m
     labels:
       traefik.enable: true
       traefik.http.routers.sonarr.entrypoints: websecure
@@ -58,6 +66,10 @@ services:
       - "7878:7878"
     env_file:
       - .env
+    logging:
+      driver: json-file
+      options:
+        max-size: 1m
     labels:
       traefik.enable: true
       traefik.http.routers.radarr.entrypoints: websecure
