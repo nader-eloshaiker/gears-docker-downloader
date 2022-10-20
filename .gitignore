@@ -2,4 +2,8 @@
 **/Backups
 config/transmission/resume
 config/transmission/torrent
+config/transmission/dht.dat
+*.torrent
 **/logs**
+*.log
+*.pid

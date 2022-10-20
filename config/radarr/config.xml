@@ -12,4 +12,5 @@
   <UpdateMechanism>Docker</UpdateMechanism>
   <SslCertPath></SslCertPath>
   <SslCertPassword></SslCertPassword>
+  <InstanceName>Radarr</InstanceName>
 </Config>
